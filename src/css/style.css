@@ -1,0 +1,137 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+
+}
+*{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    background-color:black;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30vh 70vh;
+}
+
+.container{
+    background-color: var(--Dark-Blue);
+    border-radius: 10px;
+    padding: 5vh;
+}
+
+.container h2{
+    color: var(--White);
+    text-align: left;
+}
+
+.container p{
+    line-height: 1.25;
+    color: var(--Light-Grey);
+    text-align: justify
+}
+
+.container img{
+    background-color: hsl(213, 20%, 22%);
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.btn-container ul{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: hsl(213, 20%, 22%);
+    color: var(--White);
+    border-radius: 100% ;
+    border-color: transparent;
+    font-size: 15px;
+    padding: 10px 15px;
+    transition: all .3s;
+}
+
+.btn:hover{
+    color: black;
+    background-color: var(--Orange);
+}
+
+.btn:focus{
+    background-color: var(--Light-Grey);
+}
+
+.btn-submit{
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: var(--Orange);
+    padding: 6px 43%;
+    transition: all .3s;
+}
+
+.btn-submit:hover{
+    color: black;
+    background-color: var(--White);
+}
+
+.result-container{
+    background-color: var(--Dark-Blue);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5vh;
+
+}
+
+.result-container h1{
+    color: var(--White);
+    text-align: left;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.result-container img{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-left: 15vh;
+}
+
+.result-container h2{
+    background-color: hsl(213, 20%, 22%);
+    color: var(--Orange);
+    font-size: 15px;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+
+.result-container p{
+    line-height: 1.25;
+    color: var(--Light-Grey);
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+.attribution{
+    color: var(--White);
+    padding: 10px;
+    text-align: center;
+}
